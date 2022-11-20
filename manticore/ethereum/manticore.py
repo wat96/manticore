@@ -1,7 +1,7 @@
 import binascii
 import json
 import logging
-from multiprocessing import Queue, Process
+from multiprocessing_on_dill import Queue, Process
 from queue import Empty as EmptyQueue
 from typing import Dict, Optional, Union
 import io
