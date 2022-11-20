@@ -57,7 +57,7 @@ consts.add(
 
 proc_type = MProcessingType.threading
 if sys.platform != "linux":
-    logger.warning("Manticore is only supported on Linux. Proceed at your own risk!")
+    #logger.warning("Manticore is only supported on Linux. Proceed at your own risk!")
     proc_type = MProcessingType.threading
 
 consts.add(
