@@ -2921,6 +2921,10 @@ class EVMWorld(Platform):
         new_nonce = self.get_nonce(address) + 1
         self._world_state[address]["nonce"] = new_nonce
         return new_nonce
+    
+    def set_nonce(self, address, new_nonce):
+        self._world_state[address]["nonce"] = new_nonce
+        return new_nonce
 
     def set_balance(self, address, value):
         if isinstance(value, BitVec):
